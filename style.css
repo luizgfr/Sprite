@@ -2,24 +2,70 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'vintage';
+    src: url(fonte/The\ Vintage\ Town.ttf) format('truetype');
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    z-index: 50;
+    background-image: linear-gradient(to right, #141C31, #2D4368, #3E6DB1, #2D4368, #141C31);
+}
+
+nav .icon_1{
+    width: 125px;
+    height: 50px;
+    margin-top: 2.5px;
+    margin-left: 1%;
+    position: absolute;
+}
+
+nav h1{
+    color: #141C31;
+    margin-left: 49.5%;
+    margin-top: 0px;
+    font-size: 35px;
+    position: absolute;
+    transform: translate(-50%);
+    font-family: 'vintage';
+}
+
+nav .icon_2{
+    width: 125px;
+    height: 50px;
+    position: absolute;
+    margin-left: 90.7%;
+    margin-top: 2.5px;
+}
+
 footer{
     background-color: #0B0F1B;
     width: 100%;
     height: 100px;
-    margin-top: 60%;
+    margin-top: 67%;
     z-index: 40;
     position: absolute;
+    background-image: linear-gradient(to right, #141C31, #2D4368, #3E6DB1, #2D4368, #141C31);
 }
 
 footer h2{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    margin-top: 43px;
+    color: #141C31;
+    font-size: 20px;
+    margin-top: 35px;
     margin-left: 50%;
     transform: translate(-50%);
     position: absolute;
+    font-family: 'vintage';
+}
 
+.fanart{
+    width: 100%;
+    height: 1000px;
+    margin-top: 50px;
+    position: absolute;
 }
 
 .background{
@@ -30,21 +76,21 @@ footer h2{
     transform: translate(-50%);
     z-index: 20;
     position: absolute;
-    border-radius: 20px;
-    opacity: 75%;
+    border-radius: 350px;
+    opacity: 100%;
 }
 
 .fundo{
-    background-color: #9DCBD8;
+    background-color: #65552D;
     width: 66%;
     height: 87%;
     position: absolute;
     z-index: 15;
-    border-radius: 20px;
+    border-radius: 350px;
     margin-top: 16.5%;
     margin-left: 50%;
     transform: translate(-50%);
-    opacity: 75%;
+    opacity: 100%;
 }
 
 .tesouro{
@@ -56,10 +102,36 @@ footer h2{
     z-index: 30;
 }
 
-.fanart{
-    width: 100%;
-    height: 1000px;
+.win{
+    background-color: rgb(0, 0, 0);
+    width: 65%;
+    height: 85%;
+    margin-top: 17%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
     position: absolute;
+    border-radius: 350px;
+    animation: div-win 20s infinite;
+}
+
+.win h2{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    margin-top: 25%;
+    margin-left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+
+@keyframes div-win{
+    0% {opacity: 0%;}
+    92.99% {opacity: 0%;}
+    93% {opacity: 20%;}
+    94% {opacity: 30%;}
+    95% {opacity: 40%;}
+    96% {opacity: 50%;}
+    100% {opacity: 50%;}
 }
 
 .esq{
@@ -68,13 +140,21 @@ footer h2{
     width: 0px;
     height: 0px;
     position: absolute;
-    animation: div-esq 4s both;
+    animation: div-esq 20s infinite;
 }
 
 @keyframes div-esq {
-    0% {left: 70%; top: 65%;}
-    50% {left: 60%; top: 65%;}
-    99.9% {left: 53%; top: 65%; opacity: 100%;}
+    0% {left: 70%; top: 65%; opacity: 100%;}
+
+    19.99% {left: 53%; top: 65%; opacity: 100%;}
+    20% {left: 53%; top: 65%; opacity: 0%;}
+
+    29.99% {left: 53%; top: 76%; opacity: 0%;}
+    30% {left: 53%; top: 76%; opacity: 100%;}
+
+    49.99% {left: 28%; top: 76%; opacity: 100%;}
+    50% {left: 28%; top: 76%; opacity: 0%;}
+
     100% {left: 53%; top: 65%; opacity: 0%;}
 }
 
@@ -84,10 +164,10 @@ footer h2{
     height: 93px;
     z-index: 40;
     position: absolute;
-    animation: esq-1 0.6s steps(3) infinite;
+    animation: esq1 0.5s steps(3) infinite;
 }
 
-@keyframes esq-1 {
+@keyframes esq1 {
     from {background-position: 0px;}
     to {background-position: 200px;}
 }
@@ -98,5 +178,352 @@ footer h2{
     width: 0px;
     height: 0px;
     position: absolute;
-    animation: div-baixo 2s both;
+    animation: div-baixo 20s infinite;
+}
+
+@keyframes div-baixo {
+    0% {left: 53%; top: 65%; opacity: 0%;}
+
+    19.99% {left: 53%; top: 65%; opacity: 0%;}
+    20% {left: 53%; top: 65%; opacity: 100%;}
+
+    29.99% {left: 53%; top: 76%; opacity: 100%;}
+    30% {left: 53%; top: 76%; opacity: 0%;}
+
+    100% {left: 53%; top: 76%; opacity: 0%;}
+}
+
+.luffy-baixo{
+    background-image: url(img/baixo.png);
+    width: 60px;
+    height: 90px;
+    z-index: 40;
+    position: absolute;
+    animation: baixo1 0.5s steps(3) infinite;
+}
+
+@keyframes baixo1 {
+    from {background-position: 0px;}
+    to {background-position: 190px;}
+}
+
+.dir{
+    background-color: white;
+    z-index: 40;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: div-dir 20s infinite;
+}
+
+@keyframes div-dir {
+    0% {left: 25%; top: 76%; opacity: 0%;}
+
+    49.99% {left: 28%; top: 76%; opacity: 0%;}
+    50% {left: 28%; top: 76%; opacity: 100%;}
+
+    69.99% {left: 53%; top: 76%; opacity: 100%;}
+    70% {left: 53%; top: 76%; opacity: 0%;}
+
+    79.99% {left: 53%; top: 65%; opacity: 0%;}
+    80% {left: 53%; top: 65%; opacity: 100%;}
+
+    99.99% {left: 70%; top: 65%; opacity: 100%;}
+    100% {left: 70%; top: 65%; opacity: 0%;}
+}
+
+.luffy-dir{
+    background-image: url(img/direita.png);
+    width: 70px;
+    height: 90px;
+    z-index: 40;
+    position: absolute;
+    animation: dir1 0.4s steps(3) infinite;
+}
+
+@keyframes dir1 {
+    from {background-position: 0px;}
+    to {background-position: 205px;}
+}
+
+.cima{
+    background-color: white;
+    z-index: 40;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: div-cima 20s infinite;
+}
+
+@keyframes div-cima {
+    0% {left: 53%; top: 75%; opacity: 0%;}
+
+    69.99% {left: 53%; top: 76%; opacity: 0%;}
+    70% {left: 53%; top: 76%; opacity: 100%;}
+
+    79.99% {left: 53%; top: 65%; opacity: 100%;}
+    80% {left: 53%; top: 65%; opacity: 0%;}
+
+    100% {left: 53%; top: 65%; opacity: 0%;}
+}
+
+.luffy-cima{
+    background-image: url(img/cima.png);
+    width: 60px;
+    height: 90px;
+    z-index: 40;
+    position: absolute;
+    animation: cima1 0.5s steps(3) infinite;
+}
+
+@keyframes cima1 {
+    from {background-position: 0px;}
+    to {background-position: 190px;}
+}
+
+.higuma{
+    background-image: url(img/higuma.png);
+    width: 105px;
+    height: 150px;
+    margin-top: 34%;
+    margin-left: 17%;
+    background-size: 225px;
+    z-index: 40;
+    position: absolute;
+    animation: hgm1 20s steps(2) infinite;
+}
+
+@keyframes hgm1 {
+    from {background-position: 0px;}
+    to {background-position: 240px;}
+}
+
+.tesouro{
+    background-image: url(img/tesouro2.jpg);
+    width: 105px;
+    height: 125px;
+    margin-top: 35%;
+    margin-left: 22%;
+    background-size: 225px;
+    z-index: 40;
+    position: absolute;
+    animation: tsr1 20s steps(2) infinite;
+}
+
+@keyframes tsr1 {
+    from {background-position: 0px;}
+    to {background-position: 228.5px;}
+}
+
+.mship_baixo{
+    background-color: rgb(255, 255, 255);
+    z-index: 35;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: ship-baixo 20s infinite;
+}
+
+@keyframes ship-baixo {
+    0% {left: 70%; top: 45%; opacity: 100%;}
+
+    9.99%{left: 70%; top: 60%; opacity: 100%;}
+    10% {left: 70%; top: 60%; opacity: 0%;}
+
+    100% {left: 70%; top: 60%; opacity: 0%;}
+    
+}
+
+.ms_baixo{
+    background-image: url(img/marineship_baixo.png);
+    width: 120px;
+    height: 140px;
+    z-index: 40;
+    position: absolute;
+    animation: ms_baixo1 1s steps(3) infinite;
+}
+
+@keyframes ms_baixo1 {
+    from {background-position: 0px;}
+    to {background-position: 432px;}
+}
+
+.mship_esq{
+    background-color: rgb(255, 255, 255);
+    z-index: 35;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: ship_esq 20s infinite;
+}
+
+@keyframes ship_esq {
+    0% {left: 70%; top: 60%; opacity: 0%;}
+
+    9.99% {left: 70%; top: 60%; opacity: 0%;}
+    10% {left: 70%; top: 60%; opacity: 100%;}
+
+    29.99% {left: 53%; top: 60%; opacity: 100%;}
+    30% {left: 53%; top: 60%; opacity: 0%;}
+
+    100% {left: 53%; top: 60%; opacity: 0%;}
+}
+
+.ms_esq{
+    background-image: url(img/marineship_esq.png);
+    width: 120px;
+    height: 145px;
+    z-index: 40;
+    position: absolute;
+    animation: ms-esq 1s steps(3) infinite;
+}
+
+@keyframes ms-esq {
+    from {background-position: 0px;}
+    to {background-position: 430px;}
+}
+
+.mship_cima{
+    background-color: rgb(255, 255, 255);
+    z-index: 35;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: ship-cima 20s infinite;
+}
+
+@keyframes ship-cima {
+    0% {left: 53%; top: 60%; opacity: 0%;}
+
+    29.99%{left: 53%; top: 60%; opacity: 0%;}
+    30% {left: 53%; top: 60%; opacity: 100%;}
+
+    39.99%{left: 53%; top: 60%; opacity: 100%;}
+    40% {left: 53%; top: 60%; opacity: 100%;}
+
+    59.99%{left: 53%; top: 42%; opacity: 100%;}
+    60% {left: 53%; top: 42%; opacity: 0%;}
+
+    100% {left: 53%; top: 42%; opacity: 0%;}
+    
+}
+
+.ms_cima{
+    background-image: url(img/marineship_cima.png);
+    width: 120px;
+    height: 140px;
+    z-index: 40;
+    position: absolute;
+    animation: ms_cima1 1s steps(3) infinite;
+}
+
+@keyframes ms_cima1 {
+    from {background-position: 0px;}
+    to {background-position: 432px;}
+}
+
+.mship_dir{
+    background-color: rgb(255, 255, 255);
+    z-index: 35;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: ship_dir 20s infinite;
+}
+
+@keyframes ship_dir {
+    0% {left: 53%; top: 42%; opacity: 0%;}
+
+    59.99%{left: 53%; top: 42%; opacity: 0%;}
+    60% {left: 53%; top: 42%; opacity: 100%;}
+
+    84.99% {left: 53%; top: 42%; opacity: 100%;}
+    85% {left: 53%; top: 42%; opacity: 0%;}
+
+    100% {left: 53%; top: 42%; opacity: 0%;}
+}
+
+.ms_dir{
+    background-image: url(img/marineship_dir.png);
+    width: 120px;
+    height: 145px;
+    z-index: 40;
+    position: absolute;
+    animation: ms-dir 1s steps(3) infinite;
+}
+
+@keyframes ms-dir {
+    from {background-position: 0px;}
+    to {background-position: 430px;}
+}
+
+.explosao_start{
+    background-color: rgb(255, 255, 255);
+    z-index: 35;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: ex_s 20s infinite;
+}
+
+@keyframes ex_s {
+    0% {left: 53.5%; top: 40%; opacity: 0%;}
+
+    84.99% {left: 53.5; top: 40%; opacity: 0%;}
+    85% {left: 53.5; top: 40%; opacity: 100%;}
+
+    87.49% {left: 53.5; top: 40%; opacity: 100%;}
+    87.5% {left: 53.5; top: 40%; opacity: 0%;}
+    100% {left: 53.5%; top: 40%; opacity: 0%;}
+}
+
+.ex_start{
+    background-image: url(img/explosao_start.png);
+    width: 140px;
+    height: 170px;
+    z-index: 40;
+    position: absolute;
+    animation: ex1 0.5s steps(4) infinite;
+    background-size: 600px;
+}
+
+@keyframes ex1 {
+    from {background-position: 0px;}
+    to {background-position: 600px;}
+}
+
+.explosao_end{
+    background-color: rgb(255, 255, 255);
+    z-index: 30;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: ex_e 20s infinite;
+}
+
+@keyframes ex_e {
+    0% {left: 53.5%; top: 40%; opacity: 0%;}
+
+    87.5% {left: 53.5; top: 40%; opacity: 0%;}
+    87.6% {left: 53.5; top: 40%; opacity: 100%;}
+    90% {left: 53.5; top: 40%; opacity: 100%;}
+    90.1% {left: 53.5; top: 40%; opacity: 0%;}
+
+
+    100% {left: 53.5%; top: 40%; opacity: 0%;}
+}
+
+.ex_end{
+    background-image: url(img/explosao_end.png);
+    width: 140px;
+    height: 170px;
+    z-index: 40;
+    position: absolute;
+    animation: ex2 0.5s steps(4) infinite;
+    background-size: 600px;
+}
+
+@keyframes ex2 {
+    from {background-position: 0px;}
+    to {background-position: 600px;}
 }
