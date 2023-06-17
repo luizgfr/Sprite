@@ -113,7 +113,7 @@ footer h2{
     z-index: 100;
     position: absolute;
     border-radius: 450px;
-    animation: div-win 20s infinite;
+    animation: div-win 20s infinite linear;
 }
 
 .win h2{
@@ -127,11 +127,12 @@ footer h2{
 
 @keyframes div-win{
     0% {opacity: 0%;}
-    92.99% {opacity: 0%;}
-    93% {opacity: 20%;}
-    94% {opacity: 30%;}
-    95% {opacity: 40%;}
-    96% {opacity: 50%;}
+    94.99% {opacity: 0%;}
+    95% {opacity: 20%;}
+    96% {opacity: 30%;}
+    97% {opacity: 40%;}
+    98% {opacity: 50%;}
+    99% {opacity: 50%;}
     100% {opacity: 50%;}
 }
 
@@ -141,7 +142,7 @@ footer h2{
     width: 0px;
     height: 0px;
     position: absolute;
-    animation: div-esq 20s infinite;
+    animation: div-esq 20s infinite linear;
 }
 
 @keyframes div-esq {
@@ -150,11 +151,11 @@ footer h2{
     19.99% {left: 53%; top: 65%; opacity: 100%;}
     20% {left: 53%; top: 65%; opacity: 0%;}
 
-    29.99% {left: 53%; top: 76%; opacity: 0%;}
-    30% {left: 53%; top: 76%; opacity: 100%;}
+    29.99% {left: 53%; top: 78%; opacity: 0%;}
+    30% {left: 53%; top: 78%; opacity: 100%;}
 
-    49.99% {left: 28%; top: 76%; opacity: 100%;}
-    50% {left: 28%; top: 76%; opacity: 0%;}
+    49.99% {left: 26%; top: 78%; opacity: 100%;}
+    50% {left: 26%; top: 78%; opacity: 0%;}
 
     100% {left: 53%; top: 65%; opacity: 0%;}
 }
@@ -179,7 +180,7 @@ footer h2{
     width: 0px;
     height: 0px;
     position: absolute;
-    animation: div-baixo 20s infinite;
+    animation: div-baixo 20s infinite linear;
 }
 
 @keyframes div-baixo {
@@ -188,10 +189,10 @@ footer h2{
     19.99% {left: 53%; top: 65%; opacity: 0%;}
     20% {left: 53%; top: 65%; opacity: 100%;}
 
-    29.99% {left: 53%; top: 76%; opacity: 100%;}
-    30% {left: 53%; top: 76%; opacity: 0%;}
+    29.99% {left: 53%; top: 78%; opacity: 100%;}
+    30% {left: 53%; top: 78%; opacity: 0%;}
 
-    100% {left: 53%; top: 76%; opacity: 0%;}
+    100% {left: 53%; top: 78%; opacity: 0%;}
 }
 
 .luffy-baixo{
@@ -214,17 +215,17 @@ footer h2{
     width: 0px;
     height: 0px;
     position: absolute;
-    animation: div-dir 20s infinite;
+    animation: div-dir 20s infinite linear;
 }
 
 @keyframes div-dir {
-    0% {left: 25%; top: 76%; opacity: 0%;}
+    0% {left: 25%; top: 78%; opacity: 0%;}
 
-    49.99% {left: 28%; top: 76%; opacity: 0%;}
-    50% {left: 28%; top: 76%; opacity: 100%;}
+    49.99% {left: 28%; top: 78%; opacity: 0%;}
+    50% {left: 28%; top: 78%; opacity: 100%;}
 
-    69.99% {left: 53%; top: 76%; opacity: 100%;}
-    70% {left: 53%; top: 76%; opacity: 0%;}
+    69.99% {left: 53%; top: 78%; opacity: 100%;}
+    70% {left: 53%; top: 78%; opacity: 0%;}
 
     79.99% {left: 53%; top: 65%; opacity: 0%;}
     80% {left: 53%; top: 65%; opacity: 100%;}
@@ -236,15 +237,15 @@ footer h2{
 .luffy-dir{
     background-image: url(img/direita.png);
     width: 70px;
-    height: 90px;
+    height: 93px;
     z-index: 40;
     position: absolute;
-    animation: dir1 0.4s steps(3) infinite;
+    animation: dir1 0.5s steps(3) infinite;
 }
 
 @keyframes dir1 {
     from {background-position: 0px;}
-    to {background-position: 205px;}
+    to {background-position: 200px;}
 }
 
 .cima{
@@ -253,14 +254,14 @@ footer h2{
     width: 0px;
     height: 0px;
     position: absolute;
-    animation: div-cima 20s infinite;
+    animation: div-cima 20s infinite linear;
 }
 
 @keyframes div-cima {
-    0% {left: 53%; top: 75%; opacity: 0%;}
+    0% {left: 53%; top: 78%; opacity: 0%;}
 
-    69.99% {left: 53%; top: 76%; opacity: 0%;}
-    70% {left: 53%; top: 76%; opacity: 100%;}
+    69.99% {left: 53%; top: 78%; opacity: 0%;}
+    70% {left: 53%; top: 78%; opacity: 100%;}
 
     79.99% {left: 53%; top: 65%; opacity: 100%;}
     80% {left: 53%; top: 65%; opacity: 0%;}
@@ -284,11 +285,11 @@ footer h2{
 
 .higuma{
     background-image: url(img/higuma.png);
-    width: 105px;
-    height: 150px;
-    margin-top: 34%;
-    margin-left: 17%;
-    background-size: 225px;
+    width: 100px;
+    height: 120px;
+    margin-top: 36%;
+    margin-left: 18%;
+    background-size: 200px;
     z-index: 40;
     position: absolute;
     animation: hgm1 20s steps(2) infinite;
@@ -296,14 +297,14 @@ footer h2{
 
 @keyframes hgm1 {
     from {background-position: 0px;}
-    to {background-position: 240px;}
+    to {background-position: 196px;}
 }
 
 .tesouro{
     background-image: url(img/tesouro2.jpg);
     width: 105px;
     height: 125px;
-    margin-top: 35%;
+    margin-top: 36%;
     margin-left: 22%;
     background-size: 225px;
     z-index: 40;
@@ -332,7 +333,6 @@ footer h2{
     10% {left: 70%; top: 60%; opacity: 0%;}
 
     100% {left: 70%; top: 60%; opacity: 0%;}
-    
 }
 
 .ms_baixo{
