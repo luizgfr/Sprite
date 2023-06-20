@@ -46,7 +46,7 @@ footer{
     background-color: #0B0F1B;
     width: 100%;
     height: 100px;
-    margin-top: 67%;
+    margin-top: 68%;
     z-index: 40;
     position: absolute;
     background-image: linear-gradient(to right, #141C31, #2D4368, #3E6DB1, #2D4368, #141C31);
@@ -72,7 +72,7 @@ footer h2{
 .background{
     width: 65%;
     height: 85%;
-    margin-top: 17%;
+    margin-top: 19%;
     margin-left: 50%;
     transform: translate(-50%);
     z-index: 20;
@@ -88,7 +88,7 @@ footer h2{
     position: absolute;
     z-index: 15;
     border-radius: 450px;
-    margin-top: 16.5%;
+    margin-top: 18.5%;
     margin-left: 50%;
     transform: translate(-50%);
     opacity: 100%;
@@ -107,7 +107,7 @@ footer h2{
     background-color: rgb(0, 0, 0);
     width: 65%;
     height: 85%;
-    margin-top: 17%;
+    margin-top: 19%;
     margin-left: 50%;
     transform: translate(-50%);
     z-index: 100;
@@ -146,16 +146,16 @@ footer h2{
 }
 
 @keyframes div-esq {
-    0% {left: 70%; top: 65%; opacity: 100%;}
+    0% {left: 70%; top: 68%; opacity: 100%;}
 
-    19.99% {left: 53%; top: 65%; opacity: 100%;}
-    20% {left: 53%; top: 65%; opacity: 0%;}
+    19.99% {left: 53%; top: 68%; opacity: 100%;}
+    20% {left: 53%; top: 68%; opacity: 0%;}
 
-    29.99% {left: 53%; top: 78%; opacity: 0%;}
-    30% {left: 53%; top: 78%; opacity: 100%;}
+    29.99% {left: 53%; top: 80%; opacity: 0%;}
+    30% {left: 53%; top: 80%; opacity: 100%;}
 
-    49.99% {left: 26%; top: 78%; opacity: 100%;}
-    50% {left: 26%; top: 78%; opacity: 0%;}
+    49.99% {left: 26%; top: 80%; opacity: 100%;}
+    50% {left: 26%; top: 80%; opacity: 0%;}
 
     100% {left: 53%; top: 65%; opacity: 0%;}
 }
@@ -184,15 +184,15 @@ footer h2{
 }
 
 @keyframes div-baixo {
-    0% {left: 53%; top: 65%; opacity: 0%;}
+    0% {left: 53%; top: 68%; opacity: 0%;}
 
-    19.99% {left: 53%; top: 65%; opacity: 0%;}
-    20% {left: 53%; top: 65%; opacity: 100%;}
+    19.99% {left: 53%; top: 68%; opacity: 0%;}
+    20% {left: 53%; top: 68%; opacity: 100%;}
 
-    29.99% {left: 53%; top: 78%; opacity: 100%;}
-    30% {left: 53%; top: 78%; opacity: 0%;}
+    29.99% {left: 53%; top: 80%; opacity: 100%;}
+    30% {left: 53%; top: 80%; opacity: 0%;}
 
-    100% {left: 53%; top: 78%; opacity: 0%;}
+    100% {left: 53%; top: 80%; opacity: 0%;}
 }
 
 .luffy-baixo{
@@ -219,19 +219,19 @@ footer h2{
 }
 
 @keyframes div-dir {
-    0% {left: 25%; top: 78%; opacity: 0%;}
+    0% {left: 25%; top: 80%; opacity: 0%;}
 
-    49.99% {left: 28%; top: 78%; opacity: 0%;}
-    50% {left: 28%; top: 78%; opacity: 100%;}
+    49.99% {left: 28%; top: 80%; opacity: 0%;}
+    50% {left: 28%; top: 80%; opacity: 100%;}
 
-    69.99% {left: 53%; top: 78%; opacity: 100%;}
-    70% {left: 53%; top: 78%; opacity: 0%;}
+    69.99% {left: 53%; top: 80%; opacity: 100%;}
+    70% {left: 53%; top: 80%; opacity: 0%;}
 
-    79.99% {left: 53%; top: 65%; opacity: 0%;}
-    80% {left: 53%; top: 65%; opacity: 100%;}
+    79.99% {left: 53%; top: 68%; opacity: 0%;}
+    80% {left: 53%; top: 68%; opacity: 100%;}
 
-    99.99% {left: 70%; top: 65%; opacity: 100%;}
-    100% {left: 70%; top: 65%; opacity: 0%;}
+    99.99% {left: 70%; top: 68%; opacity: 100%;}
+    100% {left: 70%; top: 68%; opacity: 0%;}
 }
 
 .luffy-dir{
@@ -258,15 +258,15 @@ footer h2{
 }
 
 @keyframes div-cima {
-    0% {left: 53%; top: 78%; opacity: 0%;}
+    0% {left: 53%; top: 80%; opacity: 0%;}
 
-    69.99% {left: 53%; top: 78%; opacity: 0%;}
-    70% {left: 53%; top: 78%; opacity: 100%;}
+    69.99% {left: 53%; top: 80%; opacity: 0%;}
+    70% {left: 53%; top: 80%; opacity: 100%;}
 
-    79.99% {left: 53%; top: 65%; opacity: 100%;}
-    80% {left: 53%; top: 65%; opacity: 0%;}
+    79.99% {left: 53%; top: 68%; opacity: 100%;}
+    80% {left: 53%; top: 68%; opacity: 0%;}
 
-    100% {left: 53%; top: 65%; opacity: 0%;}
+    100% {left: 53%; top: 68%; opacity: 0%;}
 }
 
 .luffy-cima{
@@ -287,7 +287,7 @@ footer h2{
     background-image: url(img/higuma.png);
     width: 100px;
     height: 120px;
-    margin-top: 36%;
+    margin-top: 38%;
     margin-left: 18%;
     background-size: 200px;
     z-index: 40;
@@ -304,7 +304,7 @@ footer h2{
     background-image: url(img/tesouro2.jpg);
     width: 105px;
     height: 125px;
-    margin-top: 36%;
+    margin-top: 38.5%;
     margin-left: 22%;
     background-size: 225px;
     z-index: 40;
@@ -329,10 +329,10 @@ footer h2{
 @keyframes ship-baixo {
     0% {left: 70%; top: 45%; opacity: 100%;}
 
-    9.99%{left: 70%; top: 60%; opacity: 100%;}
-    10% {left: 70%; top: 60%; opacity: 0%;}
+    9.99%{left: 70%; top: 63%; opacity: 100%;}
+    10% {left: 70%; top: 63%; opacity: 0%;}
 
-    100% {left: 70%; top: 60%; opacity: 0%;}
+    100% {left: 70%; top: 63%; opacity: 0%;}
 }
 
 .ms_baixo{
@@ -359,15 +359,15 @@ footer h2{
 }
 
 @keyframes ship_esq {
-    0% {left: 70%; top: 60%; opacity: 0%;}
+    0% {left: 70%; top: 63%; opacity: 0%;}
 
-    9.99% {left: 70%; top: 60%; opacity: 0%;}
-    10% {left: 70%; top: 60%; opacity: 100%;}
+    9.99% {left: 70%; top: 63%; opacity: 0%;}
+    10% {left: 70%; top: 63%; opacity: 100%;}
 
-    29.99% {left: 53%; top: 60%; opacity: 100%;}
-    30% {left: 53%; top: 60%; opacity: 0%;}
+    29.99% {left: 53%; top: 63%; opacity: 100%;}
+    30% {left: 53%; top: 63%; opacity: 0%;}
 
-    100% {left: 53%; top: 60%; opacity: 0%;}
+    100% {left: 53%; top: 63%; opacity: 0%;}
 }
 
 .ms_esq{
@@ -394,13 +394,13 @@ footer h2{
 }
 
 @keyframes ship-cima {
-    0% {left: 53%; top: 60%; opacity: 0%;}
+    0% {left: 53%; top: 63%; opacity: 0%;}
 
-    29.99%{left: 53%; top: 60%; opacity: 0%;}
-    30% {left: 53%; top: 60%; opacity: 100%;}
+    29.99%{left: 53%; top: 63%; opacity: 0%;}
+    30% {left: 53%; top: 63%; opacity: 100%;}
 
-    39.99%{left: 53%; top: 60%; opacity: 100%;}
-    40% {left: 53%; top: 60%; opacity: 100%;}
+    39.99%{left: 53%; top: 63%; opacity: 100%;}
+    40% {left: 53%; top: 63%; opacity: 100%;}
 
     59.99%{left: 53%; top: 42%; opacity: 100%;}
     60% {left: 53%; top: 42%; opacity: 0%;}
